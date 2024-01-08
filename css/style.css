@@ -1,6 +1,13 @@
+:root {
+    --accent-color: #1c4d67;
+    --d-color:  #5b9ab5;
+    --b-color: #1a1a1a;
+    --b-radius: 34px;
+  }
+
 html {
-    font-family: 'SF Pro Display', sans-serif;
-    background-color: #211F20;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--b-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,43 +20,55 @@ html {
     height: 130px;
     display: block;
     margin: 20px auto;
-    border-radius: 34px;
+    border-radius: var(--b-radius);
+}
+
+#quote{
+    background-color: var(--b-color);
+    color: #7f7e80;
+    font-size: 20px;
+    padding: 25px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    line-height: 50px;
 }
 
 #userName {
-    font-weight: 700; 
+    font-weight: 800; 
     font-size: 40px;
 }
 #description{
     font-weight: 400;
-    color: rgb(142,142,147);
+    font-size: 19px;
+    color: #7f7e80;
 }
 
 main {
     width: auto;
-    max-width: 500px;
-    margin: 15px auto;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 a {
     
     color: white;
     text-decoration: none;
-    text-align: center;
 
-    background-color: #333333;
-    border-radius: 34px;
-    border: 2px solid transparent;
+    background-color: var(--b-color);
+    border: medium solid var(--d-color);
+    border-radius: var(--b-radius);
 
-    display: block;
-    margin: 10px;
+    display: inline-block;
+    margin: 5px;
     padding: 10px; 
     transition: all 0.2s ease-out;
 }
 
 a:hover{
-    border: 2px solid #BF5AF2;
-    transform: scale(1.05);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: scale(1.1);
 }
 
 a > img {
