@@ -1,6 +1,6 @@
 
 //Load github project page from project block h2
-const link = "https://github.com/damnpix/";
+const link = "https://github.com/repozen/";
 
 function getName() {
   let html = this.querySelector('h2').innerHTML;
