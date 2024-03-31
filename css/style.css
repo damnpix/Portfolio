@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
+  ::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #29282e;
+    border-radius: 12px;
+}
+
   :root{
     --accent-color: #e4a0cc;
   }
 
   body {
-    background-color: #171717;
+    background-color: #09090b;
     color: #fff;
-    font-family: Hack, monospace;
+    font-family: "Inter", sans-serif;
     line-height: 1.2;
 
     
@@ -19,7 +34,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
   main {
@@ -27,7 +41,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    margin-top: 200px;
+    padding: 100px;
+
 }
 
   .project_block{
@@ -36,24 +52,35 @@
     flex-direction: column;
     padding: 40px;
     height: auto;
-    width: auto;
-    background-color: #262626;
+    width: 100%;
+    background-color: #101013;;
+    border: 1px solid #1f1f21;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
-    border-radius: 8px;
+    border-radius: 23px;
     transition: all 0.2s ease-in-out;
     max-width: 600px;
   }
 
   .project_block:hover{
-    cursor: pointer;
-    filter: drop-shadow(0px 0px 10px #1e3b8a2c);
-    transform: scale(1.05);
+    border: 1px solid #61616a;
+  }
+
+  .project_block img{
+    margin: 0 auto; 
+    display: block; 
   }
 
   .project_block h2{
+  text-align: center;
     color: #f8f8f8;
   }
   .project_block h4{
+  text-align: center;
     font-weight: 200;
+    font-size: 18px;
     color: #f8f8f870;
+  }
+  
+  h1{
+  color: #c29bc9;
   }
