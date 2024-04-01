@@ -3,14 +3,14 @@
 const link = "https://github.com/repozen/";
 
 function getName() {
-  let html = this.querySelector('h2').innerHTML;
-  open(link + html);
+  let projectName = this.parentNode.querySelector('h2').innerText;
+  open(link + projectName.toLowerCase());
 }
 
 // Wait for the DOM content to load before accessing elements
 document.addEventListener('DOMContentLoaded', function() {
-  var products = document.getElementsByClassName('project_block');
-  for (let i = 0; i < products.length; i++) {
-    products[i].onclick = getName;
-  }
+  var buttons = document.querySelectorAll('.act_button');
+  buttons.forEach(function(button) {
+    button.addEventListener('click', getName);
+  });
 });
