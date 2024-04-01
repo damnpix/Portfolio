@@ -74,6 +74,22 @@
   text-align: center;
     color: #f8f8f8;
   }
+  .project_block button{
+    margin: 0 auto; 
+    display: block; 
+    background-color: #c024ff;
+    border-style: none;
+    border-radius: 23px;
+    color:white;
+    height: 35px;
+    width: 150px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+  }
+  .project_block button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
   .project_block h4{
   text-align: center;
     font-weight: 200;
@@ -82,5 +98,5 @@
   }
   
   h1{
-  color: #c29bc9;
+  color: #826cfb;
   }
