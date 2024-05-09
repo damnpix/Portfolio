@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
   main {
@@ -41,7 +41,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
     padding: 100px;
 
 }
